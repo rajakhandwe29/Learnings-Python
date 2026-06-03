@@ -88,7 +88,7 @@ Sum = 30
 
 ### Origin of Python
 
-- The name Python was selected from the BBC TV show "Monty Python's Flying Circus", which was broadcast from 1969 to 1974.
+- The name Python was inspired by the BBC comedy series "Monty Python's Flying Circus", which was broadcast from 1969 to 1974.
 - Python was developed by Guido van Rossum.
 - Guido incorporated features from various programming languages:
   - Functional Programming Features from C
@@ -153,7 +153,10 @@ Python can be used in almost every area of software development.
 
 ### 6. Dynamically Typed
 
-python x = 10 x = "Hello" 
+```python
+x = 10
+x = "Hello"
+```
 
 - No need to declare variable types explicitly.
 - Type is assigned automatically at runtime.
