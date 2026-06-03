@@ -233,3 +233,218 @@ _city = "Bhopal"
 ```
 
 ---
+
+# Reserved Words (Keywords) in Python
+
+## What are Reserved Words?
+
+In Python, some words are reserved to represent predefined meanings or functionality. These words are called **Reserved Words** or **Keywords**.
+
+Keywords cannot be used as identifiers (variable names, function names, class names, etc.).
+
+### Example
+
+❌ Invalid
+
+```python
+if = 10
+```
+
+✅ Valid
+
+```python
+value = 10
+```
+
+---
+
+## Python Reserved Words
+
+### Boolean and Special Values
+
+```python
+True
+False
+None
+```
+
+### Logical Operators
+
+```python
+and
+or
+not
+is
+```
+
+### Conditional Statements
+
+```python
+if
+elif
+else
+```
+
+### Loops and Control Statements
+
+```python
+while
+for
+break
+continue
+return
+in
+yield
+```
+
+### Exception Handling
+
+```python
+try
+except
+finally
+raise
+assert
+```
+
+### Functions, Classes, and Modules
+
+```python
+import
+from
+as
+class
+def
+pass
+global
+nonlocal
+lambda
+del
+with
+```
+
+---
+
+## Important Notes
+
+### 1. Keywords Contain Only Alphabetic Characters
+
+All Python keywords contain only alphabet symbols.
+
+### 2. Most Keywords Are Lowercase
+
+The following three keywords begin with uppercase letters:
+
+```python
+True
+False
+None
+```
+
+Example:
+
+❌ Invalid
+
+```python
+a = true
+```
+
+✅ Valid
+
+```python
+a = True
+```
+
+---
+
+## Display All Python Keywords
+
+Python provides the `keyword` module to view all reserved words.
+
+```python
+import keyword
+
+print(keyword.kwlist)
+```
+
+### Output
+
+```python
+['False', 'None', 'True', 'and', 'as', 'assert',
+ 'break', 'class', 'continue', 'def', 'del',
+ 'elif', 'else', 'except', 'finally', 'for',
+ 'from', 'global', 'if', 'import', 'in',
+ 'is', 'lambda', 'nonlocal', 'not', 'or',
+ 'pass', 'raise', 'return', 'try', 'while',
+ 'with', 'yield']
+```
+
+---
+
+## Check Whether a Word Is a Keyword
+
+```python
+import keyword
+
+print(keyword.iskeyword("for"))
+print(keyword.iskeyword("raja"))
+```
+
+### Output
+
+```text
+True
+False
+```
+
+---
+
+## Practice Questions
+
+### Theory
+
+1. What are reserved words in Python?
+2. Why can't reserved words be used as identifiers?
+3. Name the three keywords that start with uppercase letters.
+4. What is the purpose of the `keyword` module?
+5. Differentiate between `is` and `==`.
+
+### Coding Practice
+
+#### Question 1
+
+Display all Python keywords.
+
+```python
+import keyword
+
+print(keyword.kwlist)
+```
+
+#### Question 2
+
+Find the total number of Python keywords.
+
+```python
+import keyword
+
+print(len(keyword.kwlist))
+```
+
+#### Question 3
+
+Check whether a given word is a keyword.
+
+```python
+import keyword
+
+word = input("Enter a word: ")
+
+if keyword.iskeyword(word):
+    print("Keyword")
+else:
+    print("Not a Keyword")
+```
+
+---
+---
