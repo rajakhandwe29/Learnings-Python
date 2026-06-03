@@ -2,11 +2,14 @@
 
 # Identifiers in Python
 
-An Identifier is a name used to identify a variable, function, class, module, or any other object in a Python program.
+An **Identifier** is a name used to identify a variable, function, class, module, or object in a Python program.
 
-### Examples
+## Example
 
-python a = 10          # Variable student_name = "Raja" 
+```python
+a = 10
+name = "Raja"
+```
 
 Identifiers can be:
 
@@ -14,7 +17,6 @@ Identifiers can be:
 - Function Names
 - Class Names
 - Module Names
-- Object Names
 
 ---
 
@@ -26,109 +28,152 @@ Python identifiers can contain:
 
 - Alphabets (A-Z, a-z)
 - Digits (0-9)
-- Underscore ()
+- Underscore (_)
 
 #### Valid Examples
 
-python total = 100 student1 = "Raja" _emp = "John" 
+```python
+total = 100
+student1 = "Raja"
+_emp = "John"
+```
 
 #### Invalid Example
 
-python ca$h = 100 
+```python
+ca$h = 100
+```
 
-Reason: Dollar ($) symbol is not allowed in Python identifiers.
+Output:
+
+```text
+SyntaxError: invalid syntax
+```
 
 ---
 
 ### 2. Identifier Should Not Start with a Digit
 
-#### Invalid
+❌ Invalid
 
-python 123total = 100 
+```python
+123total = 100
+```
 
-#### Valid
+✅ Valid
 
-python total123 = 100 
+```python
+total123 = 100
+```
 
 ---
 
 ### 3. Identifiers are Case Sensitive
 
-Python treats uppercase and lowercase letters differently.
+```python
+total = 10
+TOTAL = 999
 
-python total = 10 TOTAL = 999  print(total)   # 10 print(TOTAL)   # 999 
+print(total)
+print(TOTAL)
+```
+
+Output:
+
+```text
+10
+999
+```
 
 ---
 
-### 4. Reserved Keywords Cannot Be Used
+### 4. Reserved Keywords Cannot Be Used as Identifiers
 
-Python keywords cannot be used as identifiers.
+❌ Invalid
 
-#### Invalid
+```python
+def = 10
+```
 
-python def = 10 
+Examples of Python keywords:
 
-Examples of keywords:
-
-python if else for while def class return import 
+```python
+if
+else
+for
+while
+def
+class
+return
+import
+```
 
 ---
 
 ### 5. No Length Limit
 
-Python does not impose a strict length limit on identifiers.
+```python
+this_is_a_very_long_variable_name_used_for_demonstration = 100
+```
 
-python this_is_a_very_long_variable_name_used_for_demonstration = 100 
-
-However, very long names are not recommended.
-
----
-
-### 6. Dollar ($) Symbol is Not Allowed
-
-#### Invalid
-
-python cash$amount = 1000 
+Although valid, shorter meaningful names are recommended.
 
 ---
 
-## Special Meaning of Underscore ()
+### 6. Dollar Symbol ($) is Not Allowed
 
-### Single Underscore (name)
+❌ Invalid
+
+```python
+cash$amount = 1000
+```
+
+---
+
+## Special Meaning of Underscore (_)
+
+### Single Underscore
+
+```python
+_name = "Raja"
+```
 
 Indicates a private identifier by convention.
 
-python _name = "Raja" 
-
 ---
 
-### Double Underscore (__name)
+### Double Underscore
+
+```python
+__salary = 50000
+```
 
 Indicates a strongly private identifier inside classes.
 
-python __salary = 50000 
-
 ---
 
-### Double Underscore at Both Ends (name)
+### Magic Methods (Dunder Methods)
 
-These are special language-defined names, also known as Magic Methods or Dunder Methods.
+Identifiers that start and end with double underscores are special Python methods.
 
-Examples:
-
-python __init__ __str__ __add__ 
+```python
+__init__
+__str__
+__add__
+__len__
+```
 
 ---
 
 ## Valid and Invalid Identifiers
 
-| Identifier | Valid/Invalid |
-|------------|--------------|
+| Identifier | Status |
+|------------|---------|
 | 123total | ❌ Invalid |
 | total123 | ✅ Valid |
 | JavaShare | ✅ Valid |
 | ca$h | ❌ Invalid |
-| abc_abc | ✅ Valid |
+| _abc_abc_ | ✅ Valid |
 | def | ❌ Invalid |
 | i | ✅ Valid |
 
@@ -141,17 +186,50 @@ python __init__ __str__ __add__
 1. What is an Identifier?
 2. What characters are allowed in Python identifiers?
 3. Why are identifiers case-sensitive?
-4. Can a Python identifier start with a digit?
-5. What is the purpose of underscore () in identifiers?
+4. Can an identifier start with a digit?
+5. What is the purpose of underscore (_) in Python?
 
 ### Coding Practice
 
-1. Create three valid identifiers.
-2. Create three invalid identifiers and explain why they are invalid.
-3. Demonstrate case sensitivity using two variables.
-4. Create variables using single and double underscores.
-5. Display values stored in different identifiers.
-```
-:::
+#### Question 1
 
-This section fits naturally as Chapter 2: Identifiers in Python after the introduction chapter in your README.
+Create valid identifiers and print their values.
+
+```python
+student_name = "Raja"
+age = 25
+_course = "Python"
+
+print(student_name)
+print(age)
+print(_course)
+```
+
+#### Question 2
+
+Demonstrate case sensitivity.
+
+```python
+name = "Python"
+NAME = "Programming"
+
+print(name)
+print(NAME)
+```
+
+#### Question 3
+
+Create five valid identifiers and two invalid identifiers.
+
+```python
+# Valid
+employee_id = 101
+salary = 50000
+_city = "Bhopal"
+
+# Invalid
+# 123name = "Raja"
+# ca$h = 100
+```
+
+---
