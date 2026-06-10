@@ -1,4 +1,3 @@
----
 
 # Identifiers in Python
 
@@ -18,7 +17,6 @@ Identifiers can be:
 - Class Names
 - Module Names
 
----
 
 ## Rules for Defining Identifiers
 
